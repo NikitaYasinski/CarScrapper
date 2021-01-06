@@ -1,0 +1,246 @@
+2021-01-06 12:03:47 [scrapy] DEBUG: Crawled (200) <GET https://ab.onliner.by/robots.txt> (referer: None)
+2021-01-06 12:03:47 [scrapy] DEBUG: Crawled (200) <GET https://ab.onliner.by/volkswagen/golf> (referer: None)
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2145229/380x240/98f35e3a18932f5030b7c1f53a6b5aaf.jpeg',
+ 'name': '\n                Volkswagen Golf V (Mk5)\n              ',
+ 'price': '\n          5600 $ /\n          4561 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1274702/380x240/c583290191f53625648840aafab39c57.jpeg',
+ 'name': '\n                Volkswagen Golf V (Mk5) United\n              ',
+ 'price': '\n          6599 $ /\n          5375 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/135181/380x240/7ca6b943f4b6862430b5a46f4ea88220.jpeg',
+ 'name': '\n                Volkswagen Golf III (Mk3) 1.9D 1H1\n              ',
+ 'price': '\n          1700 $ /\n          1385 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2957845/380x240/f6a8a101b727d4238e19e1b2e2fa48d7.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          9515 $ /\n          7750 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2957845/380x240/aa12c3838f8973219badc6e37b7ef444.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          9700 $ /\n          7900 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2957845/380x240/f6a8a101b727d4238e19e1b2e2fa48d7.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          9270 $ /\n          7550 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2957845/380x240/0b4bcf4170888edca99c274ec033adef.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          8595 $ /\n          7000 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2957845/380x240/e1b6f63a65065f2074326757e58d5ddd.jpeg',
+ 'name': '\n                Volkswagen Golf V (Mk5)\n              ',
+ 'price': '\n          6500 $ /\n          5294 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1530489/380x240/f0278acc414d20d91fb32879c131cd34.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2) 1.6i Mono\n              ',
+ 'price': '\n          599 $ /\n          488 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2202753/380x240/3b341c2ea8415d801b2857e52fab2641.jpeg',
+ 'name': '\n                Volkswagen Golf III (Mk3)\n              ',
+ 'price': '\n          1220 $ /\n          994 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/830025/380x240/813db38049520c3f29d9558d6738b843.jpeg',
+ 'name': '\n                Volkswagen Golf VI (Mk6)\n              ',
+ 'price': '\n          6750 $ /\n          5498 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/3083771/380x240/1f8883f5e3ce3fbf829db4fe6890c832.jpeg',
+ 'name': '\n                Volkswagen Golf IV (Mk4)\n              ',
+ 'price': '\n          3850 $ /\n          3136 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/343810/380x240/7dd399e6a314955c4b1bb7383eb404cb.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          1500 $ /\n          1223 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1160997/380x240/f74d047b531d4eff7a676d482f46bc02.jpeg',
+ 'name': '\n                Volkswagen Golf V (Mk5) BLS\n              ',
+ 'price': '\n          6300 $ /\n          5136 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2825782/380x240/4469b04ff8f9cf35d3e0da4014704071.jpeg',
+ 'name': '\n                Volkswagen Golf IV (Mk4)\n              ',
+ 'price': '\n          3600 $ /\n          2935 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1618463/380x240/895cda00c2e32f07db8b87bb8b994010.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          400 $ /\n          326 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1643793/380x240/63f0fe823da7bbe1ad08788597960ad4.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          1050 $ /\n          856 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/285712/380x240/99f22a721eaa75da5fd18dc948799a62.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          10 000 $ /\n          8152 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/3207582/380x240/6c5878ffd95308a16763a53398a9d8fd.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          775 $ /\n          631 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/482926/380x240/dabf95d0f9222006fedefc91cfff9fa5.jpeg',
+ 'name': '\n                Volkswagen Golf III (Mk3) TDI\n              ',
+ 'price': '\n          1400 $ /\n          1141 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2721969/380x240/b3cf40c81dddbd868851cc98d97dbfc4.jpeg',
+ 'name': '\n                Volkswagen Golf IV (Mk4)\n              ',
+ 'price': '\n          4000 $ /\n          3261 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/3171490/380x240/d5148cf922432592af8628eb0ed3b2b9.jpeg',
+ 'name': '\n                Volkswagen Golf IV (Mk4)\n              ',
+ 'price': '\n          4150 $ /\n          3383 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2218487/380x240/0c8a3673edc49bd0bbc2af487da035d5.jpeg',
+ 'name': '\n                Volkswagen Golf VI (Mk6)\n              ',
+ 'price': '\n          6499 $ /\n          5298 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2218487/380x240/665e903ff4edfcde091bb9f7a71c6270.jpeg',
+ 'name': '\n                Volkswagen Golf VI (Mk6)\n              ',
+ 'price': '\n          6999 $ /\n          5705 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/769485/380x240/6171bce444a8877ba3b7bdd36012afa5.jpeg',
+ 'name': '\n                Volkswagen Golf V (Mk5)\n              ',
+ 'price': '\n          5900 $ /\n          4809 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/ad53c2833e8955e56eb5f867e94f1419.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7) GTD\n              ',
+ 'price': '\n          12 438 $ /\n          10 130 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2348579/380x240/28b1366e245277b454c415a46a763c65.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          650 $ /\n          530 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2228621/380x240/248f78062fcce017820383be102dd6ce.jpeg',
+ 'name': '\n                Volkswagen Golf IV (Mk4)\n              ',
+ 'price': '\n          3500 $ /\n          2853 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2608194/380x240/a6e7ff9c34af58748a520eab927f4b0b.jpeg',
+ 'name': '\n                Volkswagen Golf III (Mk3)\n              ',
+ 'price': '\n          1700 $ /\n          1386 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/008ee7410ff3e316743dc9791e0b7284.png',
+ 'name': '\n                Volkswagen Golf VII (Mk7) GTE\n              ',
+ 'price': '\n          14 856 $ /\n          12 100 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/cd7e3bfaa0f57a436d5e4c9c770dc043.png',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) GTI PERFOMANCE\n'
+         '              ',
+ 'price': '\n          18 601 $ /\n          15 150 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/936bbb867c0af466b92965bcaf0ada48.png',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          10 805 $ /\n          8800 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/ab75013abce03f022d494778cbcb13db.png',
+ 'name': '\n                Volkswagen Golf E-GOLF\n              ',
+ 'price': '\n          18 294 $ /\n          14 900 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/2876529/380x240/ab71ea78bddfe6d29b5711beace05d03.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          900 $ /\n          734 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/df21ef39c6a671f962c71e2aed761d2e.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          7551 $ /\n          6150 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/83ece6e6aef14615e0d7689c6815f7fd.png',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) Sportsvan\n'
+         '              ',
+ 'price': '\n          9800 $ /\n          7989 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/29a8eb956ee4c60ec504c807e13f8251.jpeg',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) SPORTSVAN\n'
+         '              ',
+ 'price': '\n          11 173 $ /\n          9100 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/5f2e75c053d525bbfee017d55c4cf616.png',
+ 'name': '\n                Volkswagen Golf VII (Mk7) HIGHLINE\n              ',
+ 'price': '\n          9454 $ /\n          7700 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/57ee13b37289d3bd38475cfd44a9c51b.png',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) Sportsvan\n'
+         '              ',
+ 'price': '\n          11 910 $ /\n          9700 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/38dd95362b3a7daf7e6540a35da3cedd.jpeg',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) Comfortline\n'
+         '              ',
+ 'price': '\n          7200 $ /\n          5869 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/9e658676eb8f1a70fa081acb48621fff.png',
+ 'name': '\n                Volkswagen Golf VII (Mk7) GTE\n              ',
+ 'price': '\n          16 784 $ /\n          13 670 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/0596761b360d5158115bc2a2a2d01a06.png',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) SPORTSVAN HIGHLINE\n'
+         '              ',
+ 'price': '\n          10 436 $ /\n          8500 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/0a61040379dde194e3cd6870fd13ea97.png',
+ 'name': '\n                Volkswagen Golf VII (Mk7) TGI\n              ',
+ 'price': '\n          9577 $ /\n          7800 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1620262/380x240/383741952bae98ecba3703ba9f25fb08.jpeg',
+ 'name': '\n                Volkswagen Golf VI (Mk6)\n              ',
+ 'price': '\n          5000 $ /\n          4076 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/78156d0ff06ebafacbafe7362307fe62.png',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) Рестайлинг E-GOLF\n'
+         '              ',
+ 'price': '\n          26 398 $ /\n          21 500 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/550844/380x240/ca932dd305b285ec7288ea8cb1047f8b.jpeg',
+ 'name': '\n'
+         '                Volkswagen Golf III (Mk3) Кабриолет\n'
+         '              ',
+ 'price': '\n          3300 $ /\n          2690 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/1500973/380x240/a2daf8bac9498e7d84e3174a842ca3b8.jpeg',
+ 'name': '\n                Volkswagen Golf III (Mk3)\n              ',
+ 'price': '\n          1900 $ /\n          1549 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/427554/380x240/c0abeaf29df50dfbad13b2262b39d512.jpeg',
+ 'name': '\n                Volkswagen Golf II (Mk2)\n              ',
+ 'price': '\n          1250 $ /\n          1019 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/3162434/380x240/9d84513c58b37ecbbaa2036cf23a38f4.jpeg',
+ 'name': '\n'
+         '                Volkswagen Golf VII (Mk7) МЕТАН (КРЕДИТ,ЛИЗИНГ)\n'
+         '              ',
+ 'price': '\n          12 999 $ /\n          10 596 €\n        '}
+2021-01-06 12:03:52 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/volkswagen/golf>
+{'img': 'https://content.onliner.by/automarket/3162434/380x240/3e895f8b299477877c4da28db2632237.jpeg',
+ 'name': '\n                Volkswagen Golf VII (Mk7)\n              ',
+ 'price': '\n          11 200 $ /\n          9130 €\n        '}
+2021-01-06 12:03:52 [scrapy] INFO: Closing spider (finished)
+2021-01-06 12:03:52 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 490,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 17831,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 5.484307,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 9, 3, 52, 828641),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 7,
+ 'memusage/max': 88756224,
+ 'memusage/startup': 88756224,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 1, 6, 9, 3, 47, 344334)}
+2021-01-06 12:03:52 [scrapy] INFO: Spider closed (finished)

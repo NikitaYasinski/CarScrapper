@@ -1,0 +1,470 @@
+2021-01-05 19:26:01 [scrapy] DEBUG: Crawled (200) <GET https://ab.onliner.by/robots.txt> (referer: None)
+2021-01-05 19:26:01 [scrapy] DEBUG: Crawled (200) <GET https://ab.onliner.by/bmw> (referer: None)
+2021-01-05 19:26:43 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/200090/380x240/a6d22bbd92ed8b02f4741083c39e109b.jpeg',
+ 'name': '\n'
+         '                BMW 3 серия VI (F30/F31) M Performance\n'
+         '              ',
+ 'price': '\n          18 300 $ /\n          14 917 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:27:13 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/5460/380x240/8ddea46fd9810435ef2f6c5ef952441d.jpeg',
+ 'name': '\n                BMW X6 II (F16) xDrive 35i\n              ',
+ 'price': '\n          42 000 $ /\n          34 237 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:27:43 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/605510/380x240/d26b538d2209adf1dfe2faa568450e08.jpeg',
+ 'name': '\n                BMW 5 серия IV (E39)\n              ',
+ 'price': '\n          4000 $ /\n          3261 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:28:13 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/311959/380x240/2a062c812fac63286ae1ea9f61fe652e.jpeg',
+ 'name': '\n                BMW X3 III (G01) 30d M sport\n              ',
+ 'price': '\n          74 709 $ /\n          60 900 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:28:43 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/137265/380x240/0a7db1e7fa1e630c68cc57e139c56744.jpeg',
+ 'name': '\n                BMW 5 серия VI (F10/F11/F18)\n              ',
+ 'price': '\n          17 800 $ /\n          14 510 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:29:13 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/421118/380x240/a59dde6de6b4a32bb4b55a83cb958de1.png',
+ 'name': '\n'
+         '                BMW 2 серия I (F2x) 216 Grand Activ\n'
+         '              ',
+ 'price': '\n          11 163 $ /\n          9100 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:29:43 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/421118/380x240/28665305bf5b78ce0b0d9f9c8b28a5e2.jpeg',
+ 'name': '\n                BMW 5 серия 525 X-DRIVE\n              ',
+ 'price': '\n          15 334 $ /\n          12 500 €\n        '}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5ff493193e751bb31f27f661, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/79045c3025df24d97e7debf23de56279.png',
+ 'name': '\n                BMW 4 серия I (F32/F33) 420\n              ',
+ 'price': '\n          17 113 $ /\n          13 950 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/d2e7b6e94171fdfde669dd0f77c7ba4f.png',
+ 'name': '\n                BMW 3 серия 320 GT X-DRIVE\n              ',
+ 'price': '\n          14 660 $ /\n          11 950 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/f2cdfaf215997b8b38fab7527f13f183.jpeg',
+ 'name': '\n                BMW i8 I (I12)\n              ',
+ 'price': '\n          58 884 $ /\n          48 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/2620715/380x240/5a0373d3322111c18d91bbcd9a5ba800.jpeg',
+ 'name': '\n                BMW 5 серия IV (E39)\n              ',
+ 'price': '\n          3300 $ /\n          2690 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/a0f361b41e39c1667b37206150148c84.png',
+ 'name': '\n                BMW X1 II (F48)\n              ',
+ 'price': '\n          17 297 $ /\n          14 100 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/e858eedd3c09311abb1da1311f57d6f7.png',
+ 'name': '\n                BMW 5 серия 520 GT\n              ',
+ 'price': '\n          16 500 $ /\n          13 450 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/48521e4a07875f78e4b64a52ad0375e4.png',
+ 'name': '\n                BMW 4 серия I (F32/F33) 420\n              ',
+ 'price': '\n          19 505 $ /\n          15 900 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/78ddb5b1252f177533dc1f358b63f54e.png',
+ 'name': '\n'
+         '                BMW 7 серия VI (G11/G12) 730 M-PACK\n'
+         '              ',
+ 'price': '\n          42 630 $ /\n          34 750 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/53a260c65814b79eb10149b92efb71d9.jpeg',
+ 'name': '\n                BMW X1 II (F48)\n              ',
+ 'price': '\n          16 070 $ /\n          13 100 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/ea57609544f8e76017aa4652ab391b10.jpeg',
+ 'name': '\n                BMW 2 серия I (F2x) 216 M-SPORT\n              ',
+ 'price': '\n          12 869 $ /\n          10 490 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/e45d0115e20110c20005354195b6b2c8.jpeg',
+ 'name': '\n                BMW 2 серия I (F2x) 216 SPORT LINE\n              ',
+ 'price': '\n          14 108 $ /\n          11 500 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/3c3c88e443117b30460ee65a870e1f4d.jpeg',
+ 'name': '\n                BMW 4 серия I (F32/F33) 430\n              ',
+ 'price': '\n          22 327 $ /\n          18 200 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/2028005/380x240/2155fd32b7798a324f206f8a999a04bd.jpeg',
+ 'name': '\n                BMW 5 серия IV (E39)\n              ',
+ 'price': '\n          3300 $ /\n          2690 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/19c74f51294b1c3795456cedfe2591bb.jpeg',
+ 'name': '\n                BMW X1 II (F48) hail damage\n              ',
+ 'price': '\n          17 174 $ /\n          14 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/82b52199618c47a821d92502b7d0a1c7.jpeg',
+ 'name': '\n'
+         '                BMW 4 серия I (F32/F33) 420 GranCoupe M-PACK\n'
+         '              ',
+ 'price': '\n          18 769 $ /\n          15 300 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/4fb9d2a04fa2f4a7df87b5c656136a7d.jpeg',
+ 'name': '\n                BMW 2 серия I (F2x) 216\n              ',
+ 'price': '\n          11 519 $ /\n          9390 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/098d83808350b25789119298751706ae.jpeg',
+ 'name': '\n'
+         '                BMW 5 серия VI (F10/F11/F18) Рестайлинг 520\n'
+         '              ',
+ 'price': '\n          18 524 $ /\n          15 100 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/7c4862cbd3d9585571ed9beb31475fce.png',
+ 'name': '\n'
+         '                BMW 2 серия I (F2x) 216 Gran Tourer\n'
+         '              ',
+ 'price': '\n          13 556 $ /\n          11 050 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/d8b0474435c3a14a29b37b94a5bc983e.png',
+ 'name': '\n'
+         '                BMW 2 серия I (F2x) 216 Active Tourer\n'
+         '              ',
+ 'price': '\n          13 126 $ /\n          10 700 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/281d16739f08e628de29014951e2fa1f.jpeg',
+ 'name': '\n                BMW X4 I (F26) X-LINE\n              ',
+ 'price': '\n          23 063 $ /\n          18 800 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/2f7d64707e0269e720ff35d0dd249ebb.jpeg',
+ 'name': '\n                BMW X5 III (F15) 4.0d\n              ',
+ 'price': '\n          37 171 $ /\n          30 300 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/0424d2d1991581f7146efcaaa2d27662.jpeg',
+ 'name': '\n'
+         '                BMW 4 серия I (F36) Gran Coupe Edition\n'
+         '              ',
+ 'price': '\n          20 241 $ /\n          16 500 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/de756c45a9d5603e10d00497b2812683.jpeg',
+ 'name': '\n'
+         '                BMW 4 серия I (F36) Gran Coupe Sport\n'
+         '              ',
+ 'price': '\n          21 468 $ /\n          17 500 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/35195ca6d034e43a083f68bd0094a260.jpeg',
+ 'name': '\n'
+         '                BMW 4 серия I (F36) Gran Coupe Luxury\n'
+         '              ',
+ 'price': '\n          19 751 $ /\n          16 100 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/89f794aaf1c0ad7e90dbafd3e7e1c713.jpeg',
+ 'name': '\n'
+         '                BMW 3 серия VI (F34) Gran Turismo Рестайлинг\n'
+         '              ',
+ 'price': '\n          14 721 $ /\n          12 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/6ecae798b92816c7b7a19e3f379f2e4c.jpeg',
+ 'name': '\n'
+         '                BMW 3 серия VI (F30/F31) Рестайлинг\n'
+         '              ',
+ 'price': '\n          10 500 $ /\n          8559 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/efc6b5fbed31b09eaa4b135289d08e04.jpeg',
+ 'name': '\n                BMW i3 I (I01) Рестайлинг 120ah\n              ',
+ 'price': '\n          19 628 $ /\n          16 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/2539ee0fff271bc4f767d3d03489f9d3.png',
+ 'name': '\n'
+         '                BMW 5 серия VI (F10/F11/F18) Рестайлинг EXCLUSIVE\n'
+         '              ',
+ 'price': '\n          14 046 $ /\n          11 450 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/9c7a57296e45b458add8eee494490ffa.png',
+ 'name': '\n'
+         '                BMW 3 серия VI (F30/F31) Рестайлинг 320 EXECUTIVE\n'
+         '              ',
+ 'price': '\n          13 494 $ /\n          11 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/f604446c96c9e00d59518c626be3d8d7.png',
+ 'name': '\n                BMW 5 серия VII (G30/G31) EDITION\n              ',
+ 'price': '\n          23 186 $ /\n          18 900 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/66f11d6818ab50278fe8db3b0a4a2b47.png',
+ 'name': '\n                BMW X5 III (F15) HIGH EXECUTIVE\n              ',
+ 'price': '\n          25 762 $ /\n          21 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/e50390604496ea4f6c73b747d25dcfaa.png',
+ 'name': '\n'
+         '                BMW 5 серия VI (F10/F11/F18) Рестайлинг\n'
+         '              ',
+ 'price': '\n          19 088 $ /\n          15 560 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/026e2c9889dc63686603508549e3d389.png',
+ 'name': '\n'
+         '                BMW 5 серия VI (F10/F11/F18) Рестайлинг M-PACK 525d\n'
+         '              ',
+ 'price': '\n          18 279 $ /\n          14 900 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/e32230623cd1e06c0544bf2ec3d42f8c.png',
+ 'name': '\n                BMW 5 серия VII (G30/G31) SPORT\n              ',
+ 'price': '\n          25 148 $ /\n          20 500 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/ba10bb1c0d97df6ab42b88f989ed84c3.png',
+ 'name': '\n                BMW 2 серия I (F2x) Gran Tourer\n              ',
+ 'price': '\n          14 169 $ /\n          11 550 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/321533171da048d367fad254af124119.png',
+ 'name': '\n                BMW i3 I (I01) e-drive 94ah\n              ',
+ 'price': '\n          20 364 $ /\n          16 600 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/6e9c34116bb3a04c974d38339d95dc36.jpeg',
+ 'name': '\n'
+         '                BMW 5 серия VI (F07) Gran Turismo Рестайлинг\n'
+         '              ',
+ 'price': '\n          20 855 $ /\n          17 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/421118/380x240/90487a3327b95466f255159d3bfe0747.jpeg',
+ 'name': '\n'
+         '                BMW 6 серия IV (G32) Gran Turismo 640i X-DRIVE\n'
+         '              ',
+ 'price': '\n          38 029 $ /\n          31 000 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/550844/380x240/b97e3e2d88ccb6bd9e317506f127b03a.jpeg',
+ 'name': '\n                BMW 3 серия IV (E46) Рестайлинг\n              ',
+ 'price': '\n          4200 $ /\n          3424 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/1786974/380x240/e7137ef08d628f96b3f3825e40f77717.jpeg',
+ 'name': '\n                BMW 5 серия III (E34)\n              ',
+ 'price': '\n          2200 $ /\n          1793 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/644215/380x240/f31f7125aad525a63f16967df73be68e.jpeg',
+ 'name': '\n                BMW 3 серия III (E36)\n              ',
+ 'price': '\n          1600 $ /\n          1304 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/715205/380x240/dd2cb5e7b797adda4a80755df72a1e29.jpeg',
+ 'name': '\n                BMW X5 I (E53) Рестайлинг\n              ',
+ 'price': '\n          6950 $ /\n          5665 €\n        '}
+2021-01-05 19:30:04 [scrapy] DEBUG: Scraped from <200 https://ab.onliner.by/bmw>
+{'img': 'https://content.onliner.by/automarket/3100247/380x240/bb50e755335c1eb3bc31792c46552fc1.jpeg',
+ 'name': '\n'
+         '                BMW 7 серия IV (E65/E66) Рестайлинг\n'
+         '              ',
+ 'price': '\n          7750 $ /\n          6318 €\n        '}
+2021-01-05 19:30:04 [scrapy] INFO: Closing spider (finished)
+2021-01-05 19:30:04 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 478,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 17467,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 243.169225,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 5, 16, 30, 4, 292625),
+ 'item_scraped_count': 43,
+ 'log_count/DEBUG': 55,
+ 'log_count/ERROR': 7,
+ 'log_count/INFO': 7,
+ 'memusage/max': 79622144,
+ 'memusage/startup': 67489792,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 1, 5, 16, 26, 1, 123400)}
+2021-01-05 19:30:04 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,1678 @@
+2020-12-21 13:47:19 [scrapy] DEBUG: Crawled (200) <GET https://ab.onliner.by/robots.txt> (referer: None)
+2020-12-21 13:47:19 [scrapy] DEBUG: Crawled (200) <GET https://ab.onliner.by> (referer: None)
+2020-12-21 13:48:08 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/32476/380x240/68b845d026d5d684f431660bd15a4a07.jpeg',
+ 'name': 'Skoda Fabia I Рестайлинг',
+ 'price': '3400 $ / 2775 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:48:39 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/25338/380x240/bc210f309fb2ad79afc184ef97ba1ef1.jpeg',
+ 'name': 'Acura ILX I Рестайлинг',
+ 'price': '16 450 $ / 13 427 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:49:09 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2568578/380x240/72b99d70bc750bb453c21f619c2f7457.jpeg',
+ 'name': 'BMW 7 серия V (F01/F02) F02',
+ 'price': '18 500 $ / 15 100 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:49:39 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/448303/380x240/779ca46e1d46d951548308e308247449.jpeg',
+ 'name': 'Volkswagen Golf III (Mk3)',
+ 'price': '1900 $ / 1551 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:50:09 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/32094/380x240/78aa434465746e6e8f4a24d49b0cb2a2.jpeg',
+ 'name': 'Acura ILX I Рестайлинг 2 19UDE2F76KA007830',
+ 'price': '19 000 $ / 15 508 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:50:41 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/390146/380x240/71b5d76a0cf4b7de4ab7436a64f2945d.jpeg',
+ 'name': 'Peugeot 206 I Рестайлинг',
+ 'price': '3000 $ / 2449 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:51:11 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1346008/380x240/67eb78353fa049766282324b581fa6f3.jpeg',
+ 'name': 'BMW 1 серия II (F2x) 118i',
+ 'price': '12 500 $ / 10 203 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:51:42 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/193512/380x240/6e9daf984d6a308667edfff790f8e214.jpeg',
+ 'name': 'Kia Optima III Рестайлинг',
+ 'price': '12 200 $ / 9958 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:52:12 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/310221/380x240/d5e8eb0aaf5b9896c5adbeade0dcfd07.jpeg',
+ 'name': 'Kia Optima III',
+ 'price': '9800 $ / 7999 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:52:44 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/267144/380x240/f7379d327fc4ce2d69d4c6bc79ffceba.jpeg',
+ 'name': 'Chevrolet Captiva I Рестайлинг 2 LTZ V6',
+ 'price': '13 900 $ / 11 345 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:53:14 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/109188/380x240/286bff6fde83cb1dba5812db1a34ad2c.jpeg',
+ 'name': 'Ford S-Max I Рестайлинг TITANIUM',
+ 'price': '11 700 $ / 9550 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:53:44 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/435044/380x240/c354e673decf8f2fcfad9f89bfc9a0e5.jpeg',
+ 'name': 'Infiniti QX50 II (P71A)',
+ 'price': '41 800 $ / 34 117 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:54:14 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1892540/380x240/0641b4f7efde32cc40980ccd99f5a009.jpeg',
+ 'name': 'Nissan Terrano III (D10) Elegance Plus',
+ 'price': '11 250 $ / 9182 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:54:44 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1596050/380x240/b0aed2c452ab29d2c0b6783e9758f21f.jpeg',
+ 'name': 'Volkswagen Caddy III 1.9tdi',
+ 'price': '5000 $ / 4081 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:55:15 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2309834/380x240/f396c7e4694fc5bd9d561d082cf4c226.jpeg',
+ 'name': 'Citroen C4 Grand Picasso I',
+ 'price': '6500 $ / 5305 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:55:45 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/202949/380x240/12d12ac265c003ed2833e257c39414d3.png',
+ 'name': 'Nissan X-Trail III (T32) LE Style & Navi',
+ 'price': '19 800 $ / 16 161 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:56:15 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/129703/380x240/b1c35ab980748191a4e505094d25c54d.jpeg',
+ 'name': 'Volkswagen Tiguan I Рестайлинг Sport&Style',
+ 'price': '13 500 $ / 11 019 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:56:45 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1183866/380x240/096da55729702e20053051738efe4bee.jpeg',
+ 'name': 'Renault Koleos II',
+ 'price': '19 900 $ / 16 242 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:57:15 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/3073442/380x240/13cdbb130c493b145fb828c21b49f51f.jpeg',
+ 'name': 'BMW X1 I (E84)',
+ 'price': '11 300 $ / 9223 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:57:47 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1015728/380x240/6048d1a58d6adfe62acabf18c8261cf7.jpeg',
+ 'name': 'Citroen DS5 I',
+ 'price': '10 500 $ / 8570 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:58:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1804210/380x240/db900dcdd7338f140e313541a04cc4d9.jpeg',
+ 'name': 'Citroen Saxo I',
+ 'price': '1299 $ / 1060 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:58:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2305416/380x240/eb6e0c65c3060b3379f86fb221ac625a.jpeg',
+ 'name': 'Mitsubishi Outlander III Рестайлинг 2',
+ 'price': '16 500 $ / 13 467 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:59:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/137265/380x240/0a7db1e7fa1e630c68cc57e139c56744.jpeg',
+ 'name': 'BMW 5 серия VI (F10/F11/F18)',
+ 'price': '17 800 $ / 14 528 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 13:59:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1184407/380x240/9a2999d338a6b27bfc46c93f3dbbc231.jpeg',
+ 'name': 'Citroen C4 AirCross I CL',
+ 'price': '14 450 $ / 11 794 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:00:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/143354/380x240/9f6e5a979ed7332237b2663ca1b9a05a.jpeg',
+ 'name': 'Dodge Grand Caravan V',
+ 'price': '7325 $ / 5979 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:00:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/986326/380x240/ad93c359fe3041fe43b03e928e371eb8.jpeg',
+ 'name': 'Skoda Octavia III Рестайлинг Style Maxi',
+ 'price': '18 000 $ / 14 692 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:01:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1495784/380x240/af8970f0d6ad017efc5bd423aba320d0.jpeg',
+ 'name': 'Ford Escape III Рестайлинг SE',
+ 'price': '15 600 $ / 12 733 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:01:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/223743/380x240/57404603730cbbfc6769ab0e40770c58.jpeg',
+ 'name': 'Volkswagen Golf V (Mk5)',
+ 'price': '5500 $ / 4489 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:02:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2859627/380x240/c97523f3308098a4f2ca9b7d682e26de.jpeg',
+ 'name': 'Opel Corsa E',
+ 'price': '8500 $ / 6938 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:02:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1529766/380x240/2cb9adb87dfc28fd0ed1c63cd8a0c9d6.jpeg',
+ 'name': 'Fiat 500 II Рестайлинг',
+ 'price': '10 750 $ / 8774 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:03:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/401323/380x240/ccd8b4e5b4efc2e7c241c0d9c237e5db.jpeg',
+ 'name': 'BMW 3 серия VI (F34) Gran Turismo Рестайлинг',
+ 'price': '24 950 $ / 20 364 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:03:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2735212/380x240/ce8c6b30e52a73c666e487e386d6f5b3.jpeg',
+ 'name': 'Toyota Camry VII (XV50) Рестайлинг',
+ 'price': '15 600 $ / 12 733 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:04:18 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/106481/380x240/786187669cb4e7dd4a3e0f9a316267fd.jpeg',
+ 'name': 'Volkswagen Golf VI (Mk6)',
+ 'price': '6000 $ / 4897 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:04:48 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2113841/380x240/994d1e4c46fd69afb7cb341071c9fda8.jpeg',
+ 'name': 'Opel Astra J',
+ 'price': '5950 $ / 4856 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:05:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/430451/380x240/7c6250c626edadd6638e63eafd93ea6d.jpeg',
+ 'name': 'Subaru Outback III Рестайлинг',
+ 'price': '8200 $ / 6693 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:05:49 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/481311/380x240/4364283845dce1ac47624a9882d30a81.jpeg',
+ 'name': 'Alfa Romeo 159 I TBI (TURBO)',
+ 'price': '9500 $ / 7754 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:06:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/818946/380x240/c59ecf11784e2f7df3d642d385b4aab8.jpeg',
+ 'name': 'Mazda CX-7 I',
+ 'price': '7200 $ / 5877 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:06:49 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/279280/380x240/b070feef13859c1f463030887f8dc8a5.jpeg',
+ 'name': 'Ford Focus III Рестайлинг',
+ 'price': '13 000 $ / 10 611 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:07:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/5960/380x240/9e188fdbb9b0704d55f1a7afb2a3ef97.jpeg',
+ 'name': 'BMW 5 серия V (E60/E61) black',
+ 'price': '6500 $ / 5305 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:07:49 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2358/380x240/55e6f34b73a6a5fd0b1c875a84e95529.jpeg',
+ 'name': 'Skoda Octavia III Рестайлинг STYLE',
+ 'price': '19 000 $ / 15 508 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:08:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1690985/380x240/9f663bb3a622a443e45fba9aca766d28.jpeg',
+ 'name': 'Renault Megane I Рестайлинг',
+ 'price': '1500 $ / 1224 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:08:49 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/3144843/380x240/03d64ae69357cd5524608e11479cf47f.jpeg',
+ 'name': 'Volkswagen Golf IV (Mk4)',
+ 'price': '3850 $ / 3142 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:09:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1303003/380x240/8734840524792a4d2fa9563ee757cadd.jpeg',
+ 'name': 'Subaru Impreza IV',
+ 'price': '10 900 $ / 8897 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:09:49 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1799369/380x240/cfcb628634db372a6f1eaad9075858e1.jpeg',
+ 'name': 'Ford Transit Connect III GRAND Tourneo Connect',
+ 'price': '23 156 $ / 18 900 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:10:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1930020/380x240/9c498efe4cf16d2b187021b329e5828f.jpeg',
+ 'name': 'Renault Grand Scenic III Рестайлинг 2 Bose edition',
+ 'price': '11 650 $ / 9509 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:10:49 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/581852/380x240/e9a49485ec6b5efef9e0a906808ba4d8.jpeg',
+ 'name': 'Volvo S40 I',
+ 'price': '2350 $ / 1918 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:11:19 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/581852/380x240/2c1ebe70252aada5b54bd9e6d0cd2d05.jpeg',
+ 'name': 'Peugeot 406 I Рестайлинг',
+ 'price': '3350 $ / 2734 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:11:50 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1884145/380x240/eb08b6ed42c1a087c6d3cda2bf0f8df3.jpeg',
+ 'name': 'Ford Mondeo I',
+ 'price': '1300 $ / 1061 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:12:20 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/1501028/380x240/71aa31767959d557f80561b49f946682.jpeg',
+ 'name': 'Citroen C5 I Рестайлинг',
+ 'price': '5500 $ / 4489 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:12:50 [scrapy] ERROR: Error processing {'img': 'https://content.onliner.by/automarket/2719275/380x240/bd1781ecf80f01e2cf0e003d785fdea2.jpeg',
+ 'name': 'Ford Mondeo I',
+ 'price': '550 $ / 449 €'}
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/utils/defer.py", line 157, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/nikita/carscrapper/carscrapper/pipelines.py", line 24, in process_item
+    self.collection.insert(dict(item))
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 3294, in insert
+    check_keys, manipulate, write_concern)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5fe07d370e0a0c582088ec0b, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused',)>]>
+2020-12-21 14:12:50 [scrapy] INFO: Closing spider (finished)
+2020-12-21 14:12:50 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 475,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 17721,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1530.788344,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 12, 21, 11, 12, 50, 185566),
+ 'log_count/DEBUG': 36,
+ 'log_count/ERROR': 62,
+ 'log_count/INFO': 34,
+ 'memusage/max': 82362368,
+ 'memusage/startup': 67145728,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 12, 21, 10, 47, 19, 397222)}
+2020-12-21 14:12:50 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,42 @@
+2020-12-21 13:54:44 [scrapy] DEBUG: Retrying <GET https://ab.onliner.by/robots.txt> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 13:56:45 [scrapy] DEBUG: Retrying <GET https://ab.onliner.by/robots.txt> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 13:58:18 [scrapy] ERROR: Gave up retrying <GET https://ab.onliner.by/robots.txt> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 13:58:18 [scrapy] ERROR: Error downloading <GET https://ab.onliner.by/robots.txt>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 14:00:18 [scrapy] DEBUG: Retrying <GET https://ab.onliner.by/bmw/3-seriya> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 14:02:18 [scrapy] DEBUG: Retrying <GET https://ab.onliner.by/bmw/3-seriya> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 14:04:18 [scrapy] ERROR: Gave up retrying <GET https://ab.onliner.by/bmw/3-seriya> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 14:04:48 [scrapy] ERROR: Error downloading <GET https://ab.onliner.by/bmw/3-seriya>
+Traceback (most recent call last):
+  File "/home/nikita/.pyenv/versions/3.5.3/lib/python3.5/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-12-21 14:05:49 [scrapy] INFO: Closing spider (finished)
+2020-12-21 14:05:49 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 6,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 6,
+ 'downloader/request_bytes': 1344,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'elapsed_time_seconds': 814.856502,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 12, 21, 11, 5, 49, 135923),
+ 'log_count/DEBUG': 19,
+ 'log_count/ERROR': 37,
+ 'log_count/INFO': 16,
+ 'memusage/max': 82329600,
+ 'memusage/startup': 81584128,
+ 'retry/count': 4,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 4,
+ "robotstxt/exception_count/<class 'twisted.web._newclient.ResponseNeverReceived'>": 1,
+ 'robotstxt/request_count': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2020, 12, 21, 10, 52, 14, 279421)}
+2020-12-21 14:05:49 [scrapy] INFO: Spider closed (finished)
